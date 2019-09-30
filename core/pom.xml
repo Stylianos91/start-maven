@@ -11,5 +11,21 @@
 
   <artifactId>core</artifactId>
 
+  <dependencies>
+    <!--Logging-->
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>${logback.version}</version>
+      <!--<scope>test</scope>-->
+    </dependency>
+    <!--Spring Context-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+  </dependencies>
 
 </project>
