@@ -1,4 +1,4 @@
-package helloRestfull;
+package p1helloRestfull;
 
 public class Greeting {
     private final long id;

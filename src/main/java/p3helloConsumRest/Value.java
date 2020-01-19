@@ -1,4 +1,4 @@
-package helloConsumRest;
+package p3helloConsumRest;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

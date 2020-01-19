@@ -1,14 +1,13 @@
-package helloScheduling;
+package p1helloRestfull;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
-@EnableScheduling
 public class Application {
+
     public static void main(String[] args) {
-        SpringApplication.run(Application.class);
-        System.out.println("application is running");
+        SpringApplication.run(Application.class, args);
+        System.out.println("Server running");
     }
 }
