@@ -14,6 +14,9 @@ public class ScheduledTasks {
     private static final Logger log = LoggerFactory.getLogger(ScheduledTasks.class);
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
     private static int var = 0;
+    public void logStart () {
+        System.out.println("Started from schedule class");
+    }
     @Scheduled(fixedRate = 5000)
     public void reportCurrentTime() {
         log.info("The time is now {}", dateFormat.format(new Date()));
@@ -23,5 +26,8 @@ public class ScheduledTasks {
         int var = 55;
         System.out.println("Logging out stuff " + var + " " + this.var);
         this.var++;
+    }
+    public ScheduledTasks () {
+        this.logStart();
     }
 }
